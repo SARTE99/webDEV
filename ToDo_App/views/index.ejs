@@ -1,0 +1,22 @@
+<%- include("./partials/header.ejs") %>
+
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">ToDo App</a>
+</nav>
+
+
+<div class="container mt-5">
+    <form action="/add/todo" method="POST" class="d-flex">
+        <input type="text" name="todo" class="form-control" placeholder="Enter Tasks">
+        <input type="submit" value="Add Tasks" class="btn btn-md btn-primary mx-2">
+    </form>
+</div>
+
+<ul class="list-group my-5">
+    <% todo.forEach( function (items) { %>
+    <li class="list-group-item"><%= items.todo %></li>
+<%   }) %>
+</ul>
+
+<%- include("./partials/footer.ejs") %>
