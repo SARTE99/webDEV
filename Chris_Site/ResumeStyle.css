@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+   /* box-shadow: 10px 10px 5px; */
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkgray;
+
+}
+
+.profileText h2 {
+    margin-left: 15px;
+}
+
+.imgBox {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgBox img {
+   /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    */
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.profileText h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 30px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contactInfo ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.linkedin {
+    display: flex;
+}
+
+.linkedin .text {
+    margin-left: 13px;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4
+}
+
+.contactInfo ul li span {
+    color: white;
+    font-family: 300;
+}
+
+.education {
+    padding-top: 30px;
+}
+
+.education ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.education ul li {
+    position: relative;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.college {
+    margin-bottom: 20px;
+}
+
+.college h5 {
+    color: #03a9f4;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.college h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.highSchool h5{
+    color: #03a9f4;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.highSchool h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.languages {
+    padding-top: 20px;
+}
+
+.languages ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.languages ul li {
+    position: relative;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.Lan {
+    color: white;
+}
+
+.percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+}
+
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.website {
+    padding-top: 30px;
+}
+
+
+
+
+/*--------------- CIRCLES----------------------------------- */
+
+.circles {
+    display: flex;
+}
+
+.circle_1 {
+    width: 100px;
+    height: 100px;
+    background: darkorange;
+    border-radius: 50%;
+    margin-left: 0;
+    line-height: 0;
+    position: relative;
+  }
+  
+  .circle_2 {
+    width: 100px;
+    height: 100px;
+    background: mediumslateblue;
+    border-radius: 50%;
+    margin-left: 20px;
+    line-height: 0;
+    position: relative;
+  }
+  
+  .circle_3 {
+    width: 100px;
+    height: 100px;
+    background: rgb(64, 210, 64);
+    border-radius: 50%;
+    margin-left: 20px;
+    line-height: 0;
+    position: relative;
+  }
+  
+  .circle_txt1 {
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .circle_txt2 {
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .circle_txt3 {
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    width: 100%;
+    font-weight: bold;
+  }
+
+
+  /* ---------------------------RIGHT SIDE-------------------------------- */
+
+ .right-side {
+    position: relative;
+    background: white;
+    padding: 40px;
+ }
+
+ .about {
+    margin-bottom: 50px;
+ }
+
+ .about:last-child {
+    margin-bottom: 0;
+ }
+
+ .title2 {
+    color: #003147;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+
+ .text ul {
+    list-style-type: circle;
+    margin-left: 45px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #03a9f4;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 500;
+
+}
+
+.box.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
