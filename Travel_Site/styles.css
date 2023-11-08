@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("headerPhoto2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1{
+    padding-top: 260px;
+    padding-bottom: 0;
+    font-size: 55px;
+
+}
+
+.header img{
+    width: 170px;
+    float: left;
+
+}
+
+.login-btn{
+    width: 100px;
+    padding: 8px 0px;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    float: right;
+
+}
+
+.btn{
+   background: gray !important;
+   color: #fff !important;
+   border-top-left-radius: 0 !important;
+   border-bottom-left-radius: 0 !important;
+   border-top-right-radius: 30px !important;
+   border-bottom-right-radius: 30px !important;
+   background-image: linear-gradient(#00ff7e, #1f3d90) !important;
+   width: 100px !important;
+   border: 0 !important;
+
+}
+
+.input-group{
+    width: 55% !important; 
+    /* max-width: 500px !important; */
+    margin: auto;
+    border-radius: 30px;
+    padding: 2px !important;
+}
+
+.form-control{
+    border: 0 !important;
+    border-left: 1px solid gray !important;
+}
+
+.form-control-head{
+    border: 0 !important;
+    border-radius: 30px 0 0 30px !important;
+}
+
+.nav-links{
+    display: flex;
+    width: 40%;
+    gap: 50px;
+    position: relative;
+    left: 17%;
+}
+
+.nav-links a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.nav-links li{
+    list-style-type: none;
+}
+
+
+/* Exclusives Section */
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Trending Places */
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+/* CTA */
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url("images/banner-2.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+
+.cta h3{
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn{
+    background: #ff5361;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+
+/* Travel Stories */
+
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 26px;
+}
+
+
+
+/* Making Site Responsive */
+
+@media screen and (max-width: 700px) {
+    .nav-links{
+        width: 65%;
+        position: relative;
+        display: flex;
+        left: -120px;
+        top: 10vh;
+        
+    }
+    .nav-links li{
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .input-group{
+        width: 85% !important;
+    }
+    .form-control-head{
+        width: 20%;
+    }
+    ::placeholder{
+        font-size: x-small;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 25px;
+    }
+
+    
+ 
+
+}
+
+
